@@ -9,7 +9,7 @@ public class Client {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 //        ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
         Clinic clinic = context.getBean("clinic", Clinic.class);
-        clinic.doDoctorVisit();
+        clinic.doDoctorVisit(DoctorType.SURGEON);
 
     }
 }

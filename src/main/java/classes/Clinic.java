@@ -1,5 +1,5 @@
 package classes;
 
 public interface Clinic {
-    public void doDoctorVisit();
+    public void doDoctorVisit(DoctorType doctorType);
 }
